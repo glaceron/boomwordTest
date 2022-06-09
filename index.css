@@ -1,0 +1,393 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #fff;
+    --text-color: #121213;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: rgb(23, 23, 24);
+    --text-color: rgb(167, 166, 166);
+
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    --header-width: 320px;
+  }
+
+  #help {
+    --width-help: 320px;
+  }
+
+  #stats {
+    --width-stats: 320px;
+  }
+
+  #options {
+    --width-options: 320px;
+  }
+
+  .bombIcon {
+    --left-margin: 19px;
+  }
+
+  #bombText {
+
+    --text-left: 127px;
+  }
+
+  h1 {
+    --font-size-h1: 12px;
+    --margin-left-h1: 40px;
+    --margin-right-h1: 6px;
+  }
+
+  .h1Emoji1 {
+    --emoji-size: 12px;
+  }
+
+  .h1Emoji2 {
+    --emoji-size: 12px;
+  }
+
+  .h1D {
+    --letter-spacing-D: -3px;
+  }
+
+  #playButton {
+    --button-outline: rgb(167, 166, 166) solid 2px;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .header {
+    --header-width: 548px;
+  }
+
+  #help {
+    --width-help: 500px;
+  }
+
+  #stats {
+    --width-stats: 500px;
+  }
+
+  #options {
+    --width-options: 500px;
+  }
+
+  .bombIcon {
+    --left-margin: 10px;
+  }
+
+  #bombText {
+
+    --text-left: 208px;
+  }
+
+  h1 {
+    --font-size-h1: 24px;
+    --margin-left-h1: 91px;
+    --margin-right-h1: 46px;
+  }
+
+  .h1Emoji1 {
+    --emoji-size: 25px;
+  }
+
+  .h1Emoji2 {
+    --emoji-size: 25px;
+  }
+
+  .h1D {
+    --letter-spacing-D: -7px;
+  }
+
+  #playButton {
+    --button-outline: transparent solid 2px;
+  }
+
+}
+
+:root {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: Monserrat, sans-serif;
+  touch-action: pan-x pan-y;
+  height: 100%;
+}
+
+body {
+  margin: 1px;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--header-width);
+  padding: 4px 0;
+  vertical-align: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+
+}
+
+#help {
+  display: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--width-help);
+  padding: 4px 0;
+
+}
+
+#stats {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--width-stats);
+  padding: 4px 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+
+
+}
+
+#options {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--width-options);
+  padding: 4px 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+
+
+}
+
+.container {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+h1 {
+  text-transform: uppercase;
+  border-botom: 1px solid #555;
+  margin: 0;
+  margin-left: var(--margin-left-h1);
+  margin-right: var(--margin-right-h1);
+  font-size: var(--font-size-h1);
+}
+
+.h1Emoji1 {
+  letter-spacing: -10px;
+  position: relative;
+  top: -3px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  display: inline-block;
+  font-size: var(--emoji-size);
+}
+
+.h1Emoji2 {
+  letter-spacing: -10px;
+  position: relative;
+  top: -3px;
+  font-size: var(--emoji-size);
+}
+
+
+.h1D {
+  letter-spacing: var(--letter-spacing-D);
+}
+
+.logo {
+  color: #fff;
+}
+
+.button {
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  height: 37px;
+  text-align: center;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+}
+
+.options {
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+#headerInstructions {
+
+  align-items: center;
+  height: 50px;
+  width: var(--width-help);
+  position: relative;
+}
+
+#tittleInstructions {
+  font-family: Monserrat, sans-serif;
+  color: white;
+  font-size: 22px;
+  width: 200px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+
+}
+
+
+#headerStats {
+
+  align-items: center;
+  height: 50px;
+  width: var(--width-stats);
+  position: relative;
+}
+
+#tittleStats {
+  font-family: Monserrat, sans-serif;
+  color: white;
+  font-size: 22px;
+  width: 200px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+
+}
+
+
+#headerOptions {
+
+  align-items: center;
+  height: 50px;
+  width: var(--width-stats);
+  position: relative;
+}
+
+#tittleOptions {
+  font-family: Monserrat, sans-serif;
+  color: white;
+  font-size: 22px;
+  width: 200px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+
+}
+
+.buttonClose {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  height: 30px;
+  margin: 0 auto;
+  text-align: center;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.buttonClose:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+}
+
+#bomb {
+  position: relative;
+  font-size: 20px;
+
+}
+
+.bombIcon {
+  position: relative;
+  font-size: 20px;
+  left: var(--left-margin);
+  animation-name: bombAnimation;
+  animation-duration: 450ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: 70px 105px;
+}
+
+@keyframes bombAnimation {
+  0% {
+    transform: scale(1);
+    content: url("./assets/bomb1.svg");
+  }
+
+  33% {
+    transform: scale(1);
+    content: url("./assets/bomb2.svg");
+  }
+
+  66% {
+    transform: scale(1.1);
+    content: url("./assets/bomb1.svg");
+  }
+
+  100% {
+    transform: scale(1.1);
+    content: url("./assets/bomb2.svg");
+  }
+}
+
+#bombText {
+  color: white;
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  width: 60px;
+  height: 28px;
+  bottom: 44px;
+  left: var(--text-left);
+}

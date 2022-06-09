@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <script src="https://kit.fontawesome.com/235205dc8b.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boomword</title>
+  <link rel="stylesheet" href="./index.css">
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <div id="help">
+    <div id="headerInstructions">
+      <div id="tittleInstructions">Cómo jugar</div>
+      <div id="buttonCloseInstructions" class="buttonClose">
+        <i class="fa-solid fa-xmark" style="margin-left: 15px; margin-right: 15px; padding-top: 7px;"></i>
+      </div>
+    </div>
+    <br />
+    Escribe una palabra antes de que explote la bomba.<br /><br />
+    Tu palabra debe incluir las letras que aparezcan dentro de la bomba:<br />
+    <div id="bomb">
+      <img class="bombIcon" src="./assets/bomb1.png" style="width:180px; height:180px;">
+      <div id="bombText">ÓN</div>
+    </div>
+    ÓNICE✅ HONDA❌ LEÓN✅<br /><br /><br />
+    La bomba explotará a los 7 segundos.<br /><br />
+    Introduce palabras hasta que hayas usado todas las letras desbloqueadas para ganar.<br /><br />
+    Tienes 3 vidas, al perderlas todas, se terminará el desafío.
+  </div>
+
+  <div id="stats">
+    <div id="headerStats">
+      <div id="tittleStats">Estadísiticas</div>
+      <div id="buttonCloseStats" class="buttonClose">
+        <i class="fa-solid fa-xmark" style="margin-left: 15px; margin-right: 15px; padding-top: 7px;"></i>
+      </div>
+    </div>
+    <br />
+    Estadistica 1.<br /><br />
+    Tu palabra debe incluir las letras que aparezcan dentro de la bomba, en el mismo orden y con acentos.<br /><br />
+    La bomba explotará a los 5 segundos.<br /><br />
+    Si tu palabra es válida, se reseteara el tiempo.<br /><br />
+    Tienes 3 vidas, al perderlas todas, se terminará el desafío.
+  </div>
+
+  <div id="options">
+    <div id="headerOptions">
+      <div id="tittleOptions">Opciones</div>
+      <div id="buttonCloseOptions" class="buttonClose">
+        <i class="fa-solid fa-xmark" style="margin-left: 15px; margin-right: 15px; padding-top: 7px;"></i>
+      </div>
+    </div>
+    <br />
+    Escribe una palabra antes de que explote la bomba.<br /><br />
+    Tu palabra debe incluir las letras que aparezcan dentro de la bomba, en el mismo orden y con acentos.<br /><br />
+  </div>
+
+  <div id="header" class="header">
+    <div class="button" id="buttonInstructions">
+      <i class="fa-solid fa-circle-question" style="margin-left: 15px; margin-right: 15px"></i>
+    </div>
+    <div class="logo">
+      <h1>
+        <span class="h1Emoji1">&#128163</span><span class="h1B">B</span>oomwor<span class="h1D">d</span> <span
+          class="h1Emoji2">&#128163</span>
+      </h1>
+    </div>
+    <div class="options">
+      <div class="button" id="buttonStats"><i class="fa-solid fa-chart-column"
+          style="margin-left: 15px; margin-right: 15px"></i></div>
+      <div class="button" id="buttonOptions"><i class="fa-brands fa-whmcs"
+          style="margin-left: 15px; margin-right: 15px"></i></div>
+    </div>
+  </div>
+  <div id="container" class="container">
+
+    <boomword-game></boomword-game>
+
+
+  </div>
+
+
+
+
+</body>
+
+</html>
